@@ -1,0 +1,481 @@
+:root {
+  --dl-color-gray-500: #595959;
+  --dl-color-gray-700: #999999;
+  --dl-color-gray-900: #D9D9D9;
+  --dl-size-size-large: 144px;
+  --dl-size-size-small: 48px;
+  --dl-color-danger-300: #A22020;
+  --dl-color-danger-500: #BF2626;
+  --dl-color-danger-700: #E14747;
+  --dl-color-gray-black: #000000;
+  --dl-color-gray-white: #FFFFFF;
+  --dl-size-size-medium: 96px;
+  --dl-size-size-xlarge: 192px;
+  --dl-size-size-xsmall: 16px;
+  --dl-space-space-unit: 16px;
+  --dl-color-primary-100: #003EB3;
+  --dl-color-primary-300: #0074F0;
+  --dl-color-primary-500: #14A9FF;
+  --dl-color-primary-700: #85DCFF;
+  --dl-color-success-300: #199033;
+  --dl-color-success-500: #32A94C;
+  --dl-color-success-700: #4CC366;
+  --dl-size-size-xxlarge: 288px;
+  --dl-size-size-maxwidth: 1400px;
+  --dl-radius-radius-round: 50%;
+  --dl-space-space-halfunit: 8px;
+  --dl-space-space-sixunits: 96px;
+  --dl-space-space-twounits: 32px;
+  --dl-radius-radius-radius2: 2px;
+  --dl-radius-radius-radius4: 4px;
+  --dl-radius-radius-radius8: 8px;
+  --dl-space-space-fiveunits: 80px;
+  --dl-space-space-fourunits: 64px;
+  --dl-space-space-threeunits: 48px;
+  --dl-space-space-oneandhalfunits: 24px;
+}
+.button {
+  color: var(--dl-color-gray-black);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.input {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem 1rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.textarea {
+  color: var(--dl-color-gray-black);
+  cursor: auto;
+  padding: 0.5rem;
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: var(--dl-color-gray-white);
+}
+.list {
+  width: 100%;
+  margin: 1em 0px 1em 0px;
+  display: block;
+  padding: 0px 0px 0px 1.5rem;
+  list-style-type: none;
+  list-style-position: outside;
+}
+.list-item {
+  display: list-item;
+}
+.teleport-show {
+  display: flex !important;
+  transform: none !important;
+}
+.Content {
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.Heading {
+  font-size: 32px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+
+.home-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #F6F6F6;
+}
+.home-logo {
+  top: 55px;
+  left: 200px;
+  width: 270px;
+  height: 122px;
+  position: absolute;
+  object-fit: cover;
+}
+.home-form {
+  top: 203px;
+  left: 500px;
+  width: 704px;
+  height: 548px;
+  position: absolute;
+  align-self: flex-end;
+  align-items: flex-end;
+  border-radius: 25px;
+  justify-content: center;
+  background-color: #FFFF;
+}
+.home-welcome {
+  top: 26px;
+  left: 237px;
+  color: rgb(82, 82, 82);
+  position: absolute;
+  font-size: 17px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+}
+.home-separator {
+  top: 64px;
+  flex: 0 0 auto;
+  left: 45px;
+  width: 600px;
+  height: 0px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  border-color: var(--dl-color-gray-900);
+  border-width: 1px;
+  flex-direction: row;
+}
+.home-username {
+  top: 80px;
+  left: 59px;
+  color: #268d54;
+  position: absolute;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+}
+.home-password {
+  top: 195px;
+  left: 61px;
+  color: #268d54;
+  position: absolute;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+}
+.home-username1 {
+  top: 122px;
+  left: 60px;
+  width: 552px;
+  height: 40px;
+  position: absolute;
+  border-color: var(--dl-color-gray-900);
+  border-width: 1px;
+  border-radius: 15px;
+}
+.home-password1 {
+  top: 233px;
+  left: 60px;
+  width: 555px;
+  height: 40px;
+  position: absolute;
+  border-color: var(--dl-color-gray-900);
+  border-width: 1px;
+  border-radius: 15px;
+}
+.home-login {
+  top: 300px;
+  left: 222px;
+  color: rgb(255, 255, 255);
+  width: 225px;
+  height: 42px;
+  position: absolute;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  border-width: 0px;
+  border-radius: 15px;
+  background-color: rgb(60, 179, 113);
+}
+.home-text2 {
+  top: 367px;
+  left: 200px;
+  color: rgb(82, 82, 82);
+  width: 356px;
+  height: 19px;
+  position: absolute;
+  font-size: 16px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 400;
+}
+.home-admin {
+  top: 402px;
+  left: 221px;
+  color: rgb(255, 255, 255);
+  width: 225px;
+  height: 42px;
+  position: absolute;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  border-width: 0px;
+  border-radius: 15px;
+  background-color: rgb(60, 179, 113);
+}
+.home-heading {
+  left: 211px;
+  color: rgb(82, 82, 82);
+  bottom: 70px;
+  position: absolute;
+  font-size: 16px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 400;
+}
+.home-signup {
+  left: 245px;
+  color: rgb(255, 255, 255);
+  width: 179px;
+  bottom: 22px;
+  height: 40px;
+  position: absolute;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  border-width: 0px;
+  border-radius: 15px;
+  background-color: #BFB8B8;
+}
+@media(max-width: 1600px) {
+  .home-container {
+    flex-wrap: wrap;
+    background-color: #F6F6F6;
+  }
+  .home-logo {
+    top: 4px;
+    left: 113px;
+    width: 212px;
+    height: 78px;
+  }
+  .home-form {
+    top: 134px;
+    left: 541px;
+    right: 114px;
+    width: 616px;
+    height: 572px;
+    border-radius: 25px;
+    margin-bottom: 0px;
+    padding-right: 0px;
+    background-color: #FFFFFF;
+  }
+  .home-welcome {
+    top: 21px;
+    left: 176px;
+    color: rgb(82, 82, 82);
+    margin: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 700;
+  }
+  .home-separator {
+    top: 63px;
+    left: 61px;
+    width: 500px;
+    position: absolute;
+    border-color: var(--dl-color-gray-900);
+  }
+  .home-username {
+    top: 89px;
+    left: 46px;
+    color: rgb(38, 141, 84);
+    position: absolute;
+    font-size: 18px;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 800;
+  }
+  .home-password {
+    top: 221px;
+    left: 42px;
+    color: rgb(38, 141, 84);
+    position: absolute;
+    font-size: 18px;
+    font-style: inherit;
+    font-family: Poppins;
+    font-weight: 800;
+  }
+  .home-username1 {
+    top: 124px;
+    left: 48px;
+    width: 518px;
+    height: 52px;
+    position: absolute;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: #FFFFF;
+  }
+  .home-password1 {
+    top: 266px;
+    left: 48px;
+    width: 518px;
+    height: 52px;
+    position: absolute;
+    border-width: 1px;
+    border-radius: 10px;
+    background-color: #FFFFF;
+  }
+  .home-login {
+    top: 339px;
+    left: 148px;
+    color: rgb(255, 255, 255);
+    width: 286px;
+    bottom: 42px;
+    height: 40px;
+    position: absolute;
+    font-size: 15px;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 700;
+    border-width: 0px;
+    border-radius: 20px;
+    background-color: rgb(60, 179, 113);
+  }
+  .home-text2 {
+    top: 398px;
+    left: 188px;
+    color: rgb(82, 82, 82);
+    position: absolute;
+    font-size: 12px;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 400;
+  }
+  .home-admin {
+    top: 427px;
+    left: 150px;
+    color: rgb(255, 255, 255);
+    width: 286px;
+    height: 40px;
+    position: absolute;
+    font-size: 15px;
+    font-style: inherit;
+    font-family: Poppins;
+    font-weight: 700;
+    border-width: 0px;
+    border-radius: 20px;
+    background-color: rgb(60, 179, 113);
+  }
+  .home-heading {
+    left: 197px;
+    color: rgb(82, 82, 82);
+    bottom: 73px;
+    position: absolute;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .home-signup {
+    left: 169px;
+    color: rgb(255, 255, 255);
+    width: 251px;
+    bottom: 21px;
+    height: 40px;
+    position: absolute;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 700;
+    border-width: 0px;
+    border-radius: 20px;
+    background-color: rgb(191, 184, 184);
+  }
+}
+@media(max-width: 1200px) {
+  .home-container {
+    background-color: #F6F6F6;
+  }
+  .home-logo {
+    top: 27px;
+    left: 36px;
+    position: absolute;
+  }
+  .home-form {
+    top: 201px;
+    right: 92px;
+    width: 615px;
+    height: 578px;
+    border-radius: 25px;
+    margin-bottom: 3px;
+    background-color: #ffffff;
+  }
+  .home-welcome {
+    top: 25px;
+    left: 111px;
+    color: rgb(82, 82, 82);
+    height: auto;
+    position: absolute;
+    font-size: 30px;
+    font-family: Poppins;
+    font-weight: 700;
+    line-height: inherit;
+  }
+  .home-separator {
+    top: 72px;
+    left: 53px;
+  }
+  .home-username {
+    top: 83px;
+    left: 58px;
+    color: rgb(38, 141, 84);
+    position: absolute;
+    font-size: 22px;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 700;
+  }
+  .home-password {
+    left: 33px;
+    color: rgb(38, 141, 84);
+    bottom: 197px;
+    position: absolute;
+    font-size: 22px;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 700;
+  }
+  .home-username1 {
+    top: 126px;
+    left: 51px;
+    width: 475px;
+    height: 42px;
+    position: absolute;
+    border-width: 0px;
+    border-radius: 15px;
+  }
+  .home-password1 {
+    top: 272px;
+    left: 64px;
+    width: 475px;
+    height: 42px;
+    position: absolute;
+    border-width: 0px;
+    border-radius: 15px;
+  }
+}
+@media(max-width: 767px) {
+  .home-separator {
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+}
+@media(max-width: 479px) {
+  .home-separator {
+    margin-top: var(--dl-space-space-oneandhalfunits);
+    margin-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+}
